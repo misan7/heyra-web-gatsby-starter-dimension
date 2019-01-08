@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
-    <div className="logo">
+    {/* <div className="logo">
       <span className="icon fa-diamond" />
-    </div>
+    </div> */}
     <div className="content">
       <div className="inner">
         <h1>Heyra</h1>

@@ -1,9 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import pic01 from '../images/pic01.png'
 
 class Main extends React.Component {
   render() {
@@ -20,35 +18,48 @@ class Main extends React.Component {
       <div
         ref={this.props.setWrapperRef}
         id="main"
-        style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
+        style={
+          this.props.timeout
+            ? {
+                display: 'flex',
+              }
+            : {
+                display: 'none',
+              }
+        }
       >
         <article
           id="about"
           className={`${this.props.article === 'about' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
-          style={{ display: 'none' }}
+          style={{
+            display: 'none',
+          }}
         >
-          <h2 className="major"> About </h2>{' '}
+          <h2 className="major"> Sobre Nosotros </h2>{' '}
           <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={pic01} alt="" />
           </span>{' '}
           <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit.Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac.Aliquam
-            erat volutpat.Praesent urna nisi, fringila lorem et vehicula lacinia
-            quam.Integer sollicitudin mauris nec lorem luctus ultrices.Aliquam
-            libero et malesuada fames ac ante ipsum primis in faucibus.Cras
-            viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.{' '}
+            Heyra es un asistente virtual dotado de inteligencia artificial con
+            el propósito de ayudarte a conocer gente afín a tus gustos y
+            personalidad.{' '}
+          </p>{' '}
+          <p>
+            Actualmente, Heyra está en desarrollo y en poco tiempo saldrá a la
+            luz la fase beta.{' '}
           </p>{' '}
           {close}{' '}
-        </article>
+        </article>{' '}
         <article
           id="contact"
           className={`${this.props.article === 'contact' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
-          style={{ display: 'none' }}
+          style={{
+            display: 'none',
+          }}
         >
           <h2 className="major"> Contacto </h2>{' '}
           <form method="post" action="#">
