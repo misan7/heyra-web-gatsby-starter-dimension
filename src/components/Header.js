@@ -10,7 +10,7 @@ const Header = props => (
       <div className="inner">
         <h1>Heyra</h1>
         <p>
-          El asistente virutal que organiza eventos con personas afines a tus
+          El asistente virtual que organiza eventos con personas afines a tus
           gustos.
         </p>
       </div>
@@ -24,7 +24,7 @@ const Header = props => (
               props.onOpenArticle('about')
             }}
           >
-            About
+            Sobre Nosotros
           </a>
         </li>
         <li>
@@ -34,7 +34,7 @@ const Header = props => (
               props.onOpenArticle('contact')
             }}
           >
-            Contact
+            Contacto
           </a>
         </li>
       </ul>
