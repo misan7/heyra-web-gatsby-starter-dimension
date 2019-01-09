@@ -2,6 +2,12 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/skel';
+<<<<<<< HEAD
+=======
+@import '../css/font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600');
+@import '../css/fonts.css';
+>>>>>>> 4766a3c
 
 /*
 	Dimension by HTML5 UP
@@ -25,8 +31,11 @@ boxModel: 'border'
 
 @import 'base/page';
 @import 'base/typography';
+<<<<<<< HEAD
 @import 'base/fonts.css';
 
+=======
+>>>>>>> 4766a3c
 
 // Component.
 
