@@ -32,7 +32,7 @@
 			position: absolute;
 			top: calc(-3.5rem - 1px);
 			left: calc(50% - #{_size(border-width) * 1});
-			width: _size(border-width);
+			// width: _size(border-width);
 			height: calc(3.5rem + 1px);
 			background: _palette(border);
 		}
@@ -95,12 +95,12 @@
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: solid _size(border-width) _palette(border);
+			// border: solid _size(border-width) _palette(border);
 			border-radius: _size(border-radius);
 
 			li {
 				padding-left: 0;
-				border-left: solid _size(border-width) _palette(border);
+				// border-left: solid _size(border-width) _palette(border);
 
 				&:first-child {
 					border-left: 0;
@@ -233,7 +233,7 @@
 
 				li {
 					border-left: 0;
-					border-top: solid _size(border-width) _palette(border);
+					// border-top: solid _size(border-width) _palette(border);
 
 					&:first-child {
 						border-top: 0;
