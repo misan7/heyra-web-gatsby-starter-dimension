@@ -47,7 +47,7 @@
 		'filter #{_duration(article)} ease-in-out'
 		));
 		background-image: url('../../images/bg.png');
-		background-color: #E8BB00;
+		background-color: #{_palette(bg-yellow)};
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
