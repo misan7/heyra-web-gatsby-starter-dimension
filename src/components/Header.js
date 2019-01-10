@@ -1,20 +1,34 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Logo from '!svg-react-loader!../assets/images/svg-images/logo.svg'
+
 const Header = props => (
-  <header id="header" style={props.timeout ? { display: 'none' } : {}}>
+  <header
+    id="header"
+    style={
+      props.timeout
+        ? {
+            display: 'none',
+          }
+        : {}
+    }
+  >
+    {' '}
     {/* <div className="logo">
-      <span className="icon fa-diamond" />
-    </div> */}
+          <span className="icon fa-diamond" />
+        </div> */}{' '}
     <div className="content">
       <div className="inner">
-        <h1>Heyra</h1>
+        <div className="logo-box">
+          <Logo className="logo-svg" />
+        </div>
         <p>
           El asistente virtual que organiza eventos con personas afines a tus
-          gustos.
-        </p>
-      </div>
-    </div>
+          gustos.{' '}
+        </p>{' '}
+      </div>{' '}
+    </div>{' '}
     <nav>
       <ul>
         <li>
@@ -24,9 +38,9 @@ const Header = props => (
               props.onOpenArticle('about')
             }}
           >
-            Sobre Nosotros
-          </a>
-        </li>
+            Sobre Nosotros{' '}
+          </a>{' '}
+        </li>{' '}
         <li>
           <a
             href="javascript:;"
@@ -34,11 +48,11 @@ const Header = props => (
               props.onOpenArticle('contact')
             }}
           >
-            Contacto
-          </a>
-        </li>
-      </ul>
-    </nav>
+            Contacto{' '}
+          </a>{' '}
+        </li>{' '}
+      </ul>{' '}
+    </nav>{' '}
   </header>
 )
 

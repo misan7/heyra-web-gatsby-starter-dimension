@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Logo from '!svg-react-loader!../assets/images/svg-images/logo-small.svg'
 import pic01 from '../images/pic01.png'
 
 class Main extends React.Component {
@@ -39,7 +40,7 @@ class Main extends React.Component {
         >
           <h2 className="major"> Sobre Nosotros </h2>{' '}
           <span className="image main">
-            <img src={pic01} alt="" />
+            <Logo className="logo-svg" />
           </span>{' '}
           <p>
             Heyra es un asistente virtual dotado de inteligencia artificial con
