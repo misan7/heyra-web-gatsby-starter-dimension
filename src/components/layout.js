@@ -9,11 +9,11 @@ const Layout = ({ children, location }) => {
   let content
 
   if (location && location.pathname === '/') {
-    content = <div>{children}</div>
+    content = <div> {children} </div>
   } else {
     content = (
       <div id="wrapper" className="page">
-        <div>{children}</div>
+        <> {children} </>{' '}
       </div>
     )
   }
@@ -34,13 +34,19 @@ const Layout = ({ children, location }) => {
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
+              {
+                name: 'description',
+                content: 'Sample',
+              },
+              {
+                name: 'keywords',
+                content: 'sample, something',
+              },
             ]}
           >
             <html lang="en" />
-          </Helmet>
-          {content}
+          </Helmet>{' '}
+          {content}{' '}
         </>
       )}
     />

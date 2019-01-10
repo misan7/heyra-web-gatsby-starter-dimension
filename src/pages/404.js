@@ -1,10 +1,15 @@
 import React from 'react'
+import { Link } from 'gatsby'
+
 import Layout from '../components/layout'
 
 const NotFoundPage = () => (
   <Layout>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <div className="error-box">
+      <h1>ERROR 404</h1>
+      <p>Ruta no encontrada, lo sentimos.</p>
+      <Link to="/"> Volver a Inicio </Link>
+    </div>
   </Layout>
 )
 
